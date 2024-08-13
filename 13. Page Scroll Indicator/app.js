@@ -1,2 +1,4 @@
 let indicator = document.querySelector(".scroll-indicator .progress");
-console.log(indicator);
+let scrollHeight =
+  document.documentElement.scrollHeight - document.documentElement.clientHeight;
+console.log(scrollHeight);
