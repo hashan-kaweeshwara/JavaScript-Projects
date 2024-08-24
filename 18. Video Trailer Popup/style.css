@@ -73,6 +73,12 @@ img {
   border-radius: 100%;
 }
 
+@media (max-width: 991px) {
+  .trailer-container video {
+    max-width: 90%;
+  }
+}
+
 /* JavaScript */
 .active.trailer-container {
   visibility: hidden;
