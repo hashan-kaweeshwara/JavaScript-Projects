@@ -2,7 +2,7 @@ var btn = document.getElementById("btn-click");
 var mainDiv = document.querySelector("body");
 
 // function onBtnClick() {
-//   alert("Button Clicked");
+// alert("Button Clicked");
 // }
 
 // btn.onclick = onBtnClick;
@@ -10,15 +10,15 @@ var mainDiv = document.querySelector("body");
 // btn.addEventListener("click", onBtnClick);
 
 function onBtnClick() {
-  //   alert(
-  //     "rgb(" +
-  //       Math.floor(Math.random() * 255) +
-  //       "," +
-  //       Math.floor(Math.random() * 255) +
-  //       "," +
-  //       Math.floor(Math.random() * 255) +
-  //       ")"
-  //   );
+  // alert(
+  //   "rgb(" +
+  //   Math.floor(Math.random() * 255) +
+  //   "," +
+  //   Math.floor(Math.random() * 255) +
+  //   "," +
+  //   Math.floor(Math.random() * 255) +
+  //   ")"
+  // );
 
   mainDiv.style.backgroundColor =
     "rgb(" +
