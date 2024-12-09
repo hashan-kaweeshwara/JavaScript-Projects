@@ -1,10 +1,18 @@
-var newListElement = document.createElement("li");
 var btnAdd = document.getElementById("add-item");
-
-newListElement.appendChild(document.createTextNode("List Item 3"));
-newListElement.id = "item3";
-console.log(newListElement);
+var list = document.getElementById("todo-list");
 
 btnAdd.addEventListener("click", function () {
-  alert("Clicked");
+  var newListElement = document.createElement("li");
+  var textNode = document.createTextNode(
+    "List Item " + (list.childElementCount + 1)
+  );
+  newListElement.appendChild(textNode);
+  newListElement.id = "item" + (list.childElementCount + 1);
+
+  var firstItem = list.firstElementChild;
+  console.log(firstItem);
+
+  // list.appendChild(newListElement);
+  list.insertBefore(newListElement, firstItem);
+  console.log(list.childElementCount);
 });
